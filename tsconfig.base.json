@@ -15,6 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ppui/shared": ["libs/common/shared/src/index.ts"],
+      "@ppui/ui-kit": ["libs/ui-kit/src/index.ts"],
       "admin/Module": ["apps/admin/src/app/remote-entry/entry.module.ts"],
       "tap/Module": ["apps/tap/src/app/remote-entry/entry.module.ts"]
     }
