@@ -1,5 +1,7 @@
 import { ModuleFederationConfig } from '@nx/webpack';
 
+const packages = new Set(['@angular/common', '@angular/platform-server']);
+
 const config: ModuleFederationConfig = {
   name: 'host',
   /**
@@ -14,7 +16,14 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['admin',  'tap'],
+  // remotes: ['admin', 'tap'],
+
+  shared: (name, config) => {
+    if (packages.has(name)) {
+      return { ...config, eager: true, singleton: true };
+    }
+    return false;
+  },
 };
 
 export default config;

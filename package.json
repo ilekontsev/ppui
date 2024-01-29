@@ -2,7 +2,11 @@
   "name": "@ppui/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start":  "npx nx serve host",
+    "start:ssr":  "npx nx serve-ssr host"
+
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.0.0",
