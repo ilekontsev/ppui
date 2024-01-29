@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start":  "npx nx serve host",
-    "start:ssr":  "npx nx serve-ssr host"
-
+    "start": "npx nx serve host",
+    "start:ssr": "npx nx serve-ssr host"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +22,7 @@
     "@nx/angular": "17.2.8",
     "cors": "~2.8.5",
     "express": "~4.18.2",
+    "normalize.css": "^8.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.0"
